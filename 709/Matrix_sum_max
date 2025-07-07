@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class MatrixAddition {
+public class Matrix_sum_max {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
