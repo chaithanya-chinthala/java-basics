@@ -16,68 +16,6 @@ public class Sample {
         }
     }
 }
-    /*System.out.println("printing....");
-    for(int i=0; i<r; i++){
-        for(int j=0; j<c; j++){ 
-            
-                //System.out.print(arr[i][j]);
-               res[i][j]=arr[i][j]+arr1[i][j];
-                //System.out.print(arr[i][j]);
-}
-    }
-    for(int i=0; i<r; i++){
-        for(int j=0; j<c; j++){ 
-            System.out.print(res[i][j]+" ");
-    }
-    System.out.println("");
-}
-System.out.println(max);   */
-        /*int r=obj.nextInt();
-        int c=obj.nextInt();
-        // int r1=obj.nextInt();
-        //int c1=obj.nextInt();
-        //int res[][]= new int[r][c];
-        //int arr1[][]=new int[r1][c1];
-        int[][] arr=new int[r][c];
-        //int res=0;
-        System.out.println("Enter array elements");
-        for(int i=0; i<r; i++){
-            for(int j=0; j<c; j++){
-            arr[i][j]=obj.nextInt();
-        }   
-    } 
-    int r1=obj.nextInt();
-    int c1=obj.nextInt();
-    //int res[][]= new int[r][c];
-    int arr1[][]=new int[r1][c1];
-    System.out.println("enter arr1 elements:");
-    for(int i=0; i<r1; i++){
-        for(int j=0; j<c1; j++){
-        arr1[i][j]=obj.nextInt();
-    }   
-} 
-int res[][]= new int[r][c];
-if(c==r1){
-for(int i=0; i<r; i++){
-    for(int j=0; j<c; j++){ 
-        for(int k=0;k<r1;k++ ){
-        
-            //System.out.print(arr[i][j]);
-           res[i][j]+=arr[i][k]*arr1[k][j];
-
-    }
-}
-}}
-else{
-    System.out.println("Not possible");
-}
-
-for(int i=0; i<r; i++){
-    for(int j=0; j<c; j++){ 
-        System.out.print(res[i][j]+" ");
-}
-System.out.println("");
-}*/ 
 /*int arr[]={9,0,3,5,4};
 Arrays.sort(arr);
 for(int i:arr){
