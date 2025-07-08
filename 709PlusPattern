@@ -1,0 +1,22 @@
+import java.util.*;
+public class Sample {
+    public static void main(String[] args){
+        Scanner obj = new Scanner(System.in);
+        System.out.print("Enter an odd number for size of pattern: ");
+        int n = obj.nextInt();
+        if(n % 2 == 0){
+            System.out.println("Please enter an odd number to print a proper '+' pattern.");
+            return;
+        }
+        for(int i = 0; i < n; i++){
+            for(int j = 0; j < n; j++){
+                if(i == n / 2 || j == n / 2){
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
