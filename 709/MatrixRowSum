@@ -1,0 +1,28 @@
+import java.util.*;
+public class Main {
+    public static void main(String[] args) {
+        Scanner obj = new Scanner(System.in);
+        System.out.print("Enter r&c:");
+        int r = obj.nextInt();
+        int c = obj.nextInt();
+        int[][] arr = new int[r][c]; 
+        System.out.println("Enter array elements");
+        for(int i = 0; i < r; i++) {
+            for(int j = 0; j < c; j++) {
+                arr[i][j] = obj.nextInt();
+            }   
+        } 
+        System.out.println("Sum of row-wise elements:");
+        int maxRowSum = 0;
+        for(int i = 0; i < r; i++) {
+            int rowSum = 0;
+            for(int j = 0; j < c; j++) {
+                rowSum += arr[i][j];
+            }
+            System.out.println("Row " + (i+1) + " sum = " + rowSum);
+            if(rowSum > maxRowSum)
+                maxRowSum = rowSum;
+        }
+        System.out.println("Maximum row sum is: " + maxRowSum);
+    }
+}
