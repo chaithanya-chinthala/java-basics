@@ -79,36 +79,6 @@ for(int i=0;i<n;i++){
     }
     System.out.println( );
 }  */
-  int n=obj.nextInt();
-  int arr[]=new int[n];
-  for(int i=0;i<n;i++){
-        arr[i]=obj.nextInt();
-    }
-    int maxi=arr[0];
-    int mini=arr[0];
-    for(int i=0;i<n;i++){
-        if(arr[i]>maxi){
-            maxi=arr[i];
-        }
-        if(arr[i]<mini){
-            mini=arr[i];
-        }
-    }
-    int maxi2=0;
-    int mini2=arr[0];
-    for(int i=0;i<n;i++){
-        if(arr[i]>maxi2 && arr[i]!=maxi){
-            maxi2=arr[i];
-        }
-        if(arr[i]<mini2 && arr[i]!=mini){
-            mini2=arr[i];
-        }
-    }
-    System.out.println(maxi2+" is the second maximum element");
-    System.out.println(mini2+" is the second  minimum element");
-  }
-
- }
 
 
     
