@@ -1,0 +1,74 @@
+import java.util.Arrays;
+public class StringMethods{
+    public static void main(String[] args) {
+        String s = "chaithanya";
+
+        // 1. length()
+        System.out.println("Length: " + s.length());
+
+        // 2. charAt()
+        System.out.println("charAt(7): " + s.charAt(7));
+
+        // 3. substring()
+        System.out.println("substring(2): " + s.substring(2));
+        System.out.println("substring(1, 4): " + s.substring(1, 4));
+
+        // 4. toLowerCase() and toUpperCase()
+        System.out.println("Lowercase: " + s.toLowerCase());
+        System.out.println("Uppercase: " + s.toUpperCase());
+
+        // 5. equals() and equalsIgnoreCase()
+        System.out.println("Equals 'chaithanya': " + s.equals("chaithanya"));
+        System.out.println("EqualsIgnoreCase 'CHAITHANYA': " + s.equalsIgnoreCase("CHAITHANYA"));
+
+        // 6. compareTo()
+        System.out.println("CompareTo 'chaithu': " + s.compareTo("chaithu"));
+
+        // 7. contains()
+        System.out.println("Contains 'nya': " + s.contains("nya"));
+
+        // 8. startsWith() and endsWith()
+        System.out.println("StartsWith 'chai': " + s.startsWith("chai"));
+        System.out.println("EndsWith 'nya': " + s.endsWith("nya"));
+
+        // 9. indexOf() and lastIndexOf()
+        System.out.println("IndexOf 'a': " + s.indexOf('a'));
+        System.out.println("LastIndexOf 'a': " + s.lastIndexOf('a'));
+
+        // 10. isEmpty()
+        String emptyStr = "";
+        System.out.println("IsEmpty: " + emptyStr.isEmpty());
+
+        // 11. trim()
+        String spaced = "  Java  ";
+        System.out.println("Trimmed: '" + spaced.trim() + "'");
+
+        // 12. replace()
+        System.out.println("Replace 'a' with 'c': " + s.replace('a', 'c'));
+
+        // 13. replaceAll()
+        String numStr = "c3h8a1i9t20h8u21";
+        System.out.println("ReplaceAll digits: " + numStr.replaceAll("[0-9]", ""));
+
+        // 14. split()
+        String names="jyothi,chaitu,amar";
+        String[] parts = names.split(",");
+        System.out.println("Split result: " + Arrays.toString(parts));
+
+        // 15. toCharArray()
+        char[] chars = s.toCharArray();
+        System.out.print("ToCharArray: ");
+        for (char c : chars) 
+            System.out.print(c + " ");
+        System.out.println();
+
+        // 16. valueOf()
+        int num = 99;
+        String strNum = String.valueOf(num);
+        System.out.println("ValueOf int 99: " + strNum);
+
+        // 17. join()
+        String joined = String.join(" | ", "Java", "Python", "DSA");
+        System.out.println("Joined: " + joined);
+    }
+}
