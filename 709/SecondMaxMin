@@ -1,0 +1,55 @@
+import java.util.*;
+public class SecondMaxMin {
+  public static void main(String[] args) {
+    Scanner obj = new Scanner(System.in);
+
+    System.out.print("Enter number of elements: ");
+    int n = obj.nextInt();
+    int arr[] = new int[n];
+
+    System.out.println("Enter " + n + " array elements:");
+    for (int i = 0; i < n; i++) {
+      arr[i] = obj.nextInt();
+    }
+
+    int maxi = arr[0];
+    int mini = arr[0];
+
+    for (int i = 0; i < n; i++) {
+      if (arr[i] > maxi) {
+        maxi = arr[i];
+      }
+      if (arr[i] < mini) {
+        mini = arr[i];
+      }
+    }
+
+    Integer maxi2 = null;
+    Integer mini2 = null;
+
+    for (int i = 0; i < n; i++) {
+      if (arr[i] != maxi) {
+        if (maxi2 == null || arr[i] > maxi2) {
+          maxi2 = arr[i];
+        }
+      }
+      if (arr[i] != mini) {
+        if (mini2 == null || arr[i] < mini2) {
+          mini2 = arr[i];
+        }
+      }
+    }
+
+    if (maxi2 != null) {
+      System.out.println(maxi2 + " is the second maximum element");
+    } else {
+      System.out.println("No second maximum element found");
+    }
+
+    if (mini2 != null) {
+      System.out.println(mini2 + " is the second minimum element");
+    } else {
+      System.out.println("No second minimum element found");
+    }
+  }
+}
