@@ -16,21 +16,6 @@ public class Sample {
         }
     }
 }
-/*int arr[]={9,0,3,5,4};
-Arrays.sort(arr);
-for(int i:arr){
-    System.out.println(i);
-}*/
-/*int[] arr={4,3,9,6,0};
-int[] arr1={4,3,9,6,0};
-System.out.println(Arrays.equals(arr,arr1));*/
-
-/*int arr2[]= new int[5];
-Arrays.fill(arr2,10);
-for(int i:arr2){
-    System.out.println(i);
-}
-System.out.println(Arrays.toString(arr2));*/
        /*int r=obj.nextInt();
         int c=obj.nextInt();
         int[][] arr=new int[r][c];
